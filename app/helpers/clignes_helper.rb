@@ -1,0 +1,2 @@
+module ClignesHelper
+end

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Blinks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Status</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @blinks.each do |blink| %>
+      <tr>
+        <td><%= blink.status %></td>
+        <td><%= blink.date %></td>
+        <td><%= link_to 'Show', blink %></td>
+        <td><%= link_to 'Edit', edit_blink_path(blink) %></td>
+        <td><%= link_to 'Destroy', blink, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Blink', new_blink_path %>

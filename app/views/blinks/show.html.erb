@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @blink.status %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @blink.date %>
+</p>
+
+<%= link_to 'Edit', edit_blink_path(@blink) %> |
+<%= link_to 'Back', blinks_path %>

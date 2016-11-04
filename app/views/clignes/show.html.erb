@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @cligne.status %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @cligne.date %>
+</p>
+
+<%= link_to 'Edit', edit_cligne_path(@cligne) %> |
+<%= link_to 'Back', clignes_path %>
